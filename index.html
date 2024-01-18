@@ -4,29 +4,28 @@
     ...
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
-        .navbar-fixed {
-            transition: top 0.3s;
-            background-color: #00b398; /* Replace with your actual color code */
+        .hero-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #eceff1; /* Light grey background, you can change this */
         }
-        .btn, nav {
-            background-color: #FFFFFF; /* Replace with your actual color code */
+
+        .hero-logo {
+            max-width: 300px; /* Adjust as needed */
+            margin: 0 auto;
+            display: block;
         }
+
         /* Rest of your CSS */
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <!-- Logo as SVG -->
-                <a href="#" class="brand-logo center">
-                    <img src="img/again-ride-static.svg" alt="Logo">
-                </a>
-                ...
-            </div>
-        </nav>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <img src="img/again-ride-static.svg" alt="Bike Sharing Logo" class="hero-logo">
+        <h1>Welcome to Bike Sharing for Hotels</h1>
+        <p>Explore the city with ease.</p>
     </div>
 
     <!-- Rest of your HTML -->
