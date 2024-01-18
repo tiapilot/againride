@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#004d40"> <!-- Sets the browser bar color -->
-    <title>Bike Sharing Web App</title>
-    <!-- Import Materialize CSS -->
+    ...
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
-        body {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-
-        main {
-            flex: 1 0 auto;
-        }
-
         .navbar-fixed {
             transition: top 0.3s;
+            background-color: #yourColor; /* Replace with your actual color code */
         }
+        .btn, nav {
+            background-color: #yourColor; /* Replace with your actual color code */
+        }
+        /* Rest of your CSS */
     </style>
 </head>
 <body>
@@ -28,45 +19,20 @@
     <!-- Navbar -->
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper teal darken-4">
-                <a href="#" class="brand-logo center">Bike Sharing for Hotels</a>
+            <div class="nav-wrapper">
+                <!-- Logo as SVG -->
+                <a href="#" class="brand-logo center">
+                    <img src="path_to_your_logo/again-ride-static.svg" alt="Logo">
+                </a>
+                ...
             </div>
         </nav>
     </div>
 
-    <!-- Content -->
-    <main>
-        <div class="container">
-            <h2>Welcome!</h2>
-            <p>This is your starting point for a Bike Sharing Web App designed for hotels.</p>
-            <!-- Your content here -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="page-footer teal darken-4">
-        <div class="container">
-            <p class="center-align">&copy; Your Company 2024</p>
-        </div>
-    </footer>
+    <!-- Rest of your HTML -->
 
     <!-- Import Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        // JavaScript to hide the navbar on scroll
-        document.addEventListener('DOMContentLoaded', function() {
-            let prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-                let currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    document.querySelector(".navbar-fixed").style.top = "0";
-                } else {
-                    document.querySelector(".navbar-fixed").style.top = "-64px"; // Adjust based on navbar height
-                }
-                prevScrollpos = currentScrollPos;
-            };
-        });
-    </script>
-
+    <!-- Rest of your JavaScript -->
 </body>
 </html>
