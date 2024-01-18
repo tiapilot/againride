@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4"> <!-- This sets the browser bar color -->
+    <title>Bike Sharing Web App</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Simple responsive layout */
+        body, html {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            height: 100%;
+            width: 100%;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            padding: 15px;
+            min-height: 80vh;
+        }
+
+        /* Navigation bar that hides on scroll */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: top 0.3s;
+        }
+
+        /* Sample media query for responsiveness */
+        @media (max-width: 600px) {
+            body {
+                background-color: #e8e8e8;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header id="navbar">
+    <h1>Bike Sharing for Hotels</h1>
+</header>
+
+<main>
+    <p>Welcome to our Bike Sharing Web App, designed for hotels!</p>
+    <!-- Content goes here -->
+</main>
+
+<footer>
+    <p>Footer content here</p>
+</footer>
+
+<script>
+    // JavaScript to hide the navigation bar on scroll
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+
+</body>
+</html>
